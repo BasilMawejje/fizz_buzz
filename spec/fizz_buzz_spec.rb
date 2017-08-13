@@ -17,4 +17,16 @@ describe 'fizz_buzz' do
     expect(fizz_buzz(30)).to eq 'fizz buzz'
   end
 
+  it "returns 'Negative numbers not allowed' if number is less  than 0" do
+    expect(fizz_buzz(-1)).to eq 'Negative numbers not allowed'
+  end
+
+  it "returns 'Number is greater than 100' if number is greater than 100" do
+    expect(fizz_buzz(101)).to eq 'Number is greater than 100'
+  end
+
+  it "returns 'Floats are not allowed' if number is a Float" do
+    expect(fizz_buzz(2.01)).to eq 'Floats are not allowed'
+  end
+  
 end
