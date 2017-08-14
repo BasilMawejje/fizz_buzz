@@ -28,5 +28,9 @@ describe 'fizz_buzz' do
   it "returns 'Floats are not allowed' if number is a Float" do
     expect(fizz_buzz(2.01)).to eq 'Floats are not allowed'
   end
-  
+
+  it "returns 'Strings are not allowed' if number is a string" do
+    expect(fizz_buzz("")).to eq 'Strings are not allowed'
+  end
+
 end

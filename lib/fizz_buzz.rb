@@ -1,5 +1,7 @@
 def fizz_buzz(number)
-  if has_zero_remainder?(number, 15)
+  if number.is_a? String
+    'Strings are not allowed'
+  elsif has_zero_remainder?(number, 15)
     'fizz buzz'
   elsif has_zero_remainder?(number, 5)
     'buzz'
